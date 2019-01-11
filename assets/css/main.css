@@ -2786,7 +2786,7 @@ input, select, textarea {
 			-ms-order: 1;
 			order: 1;
 			border-radius: 0;
-			width: 40%;
+			width: 50%;
 		}
 
 			.spotlight .image img {
@@ -2801,7 +2801,7 @@ input, select, textarea {
 			-ms-order: 2;
 			order: 2;
 			max-width: 48em;
-			width: 60%;
+			width: 50%;
 		}
 
 		.spotlight:nth-child(2n) {
@@ -2851,7 +2851,7 @@ input, select, textarea {
 			background-color: rgba(0, 0, 0, 0.75);
 		}
 
-		@media screen and (max-width: 1280px) {
+		/* @media screen and (max-width: 1280px) {
 
 			.spotlight .image {
 				width: 45%;
@@ -2859,9 +2859,9 @@ input, select, textarea {
 
 			.spotlight .content {
 				width: 55%;
-			}
+			} 
 
-		}
+		} */
 
 		@media screen and (max-width: 980px) {
 
@@ -3095,6 +3095,8 @@ input, select, textarea {
 		.wrapper.style3 {
 			background-color: #ffffff;
 			color: #000000;
+			box-shadow: 0 2px 50px 0 rgba(0,0,0,0.3);
+
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
@@ -3789,10 +3791,10 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
 			-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
 			transition: transform 0.75s ease, opacity 0.75s ease;
-			-moz-transition-delay: 1.0s;
-			-webkit-transition-delay: 1.0s;
-			-ms-transition-delay: 1.0s;
-			transition-delay: 1.0s;
+			-moz-transition-delay: 0.0s;
+			-webkit-transition-delay: 0.0s;
+			-ms-transition-delay: 0.0s;
+			transition-delay: 0.0s;
 		}
 
 			#banner p a {
@@ -3804,10 +3806,10 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
 			-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
 			transition: transform 0.75s ease, opacity 0.75s ease;
-			-moz-transition-delay: 1.5s;
-			-webkit-transition-delay: 1.5s;
-			-ms-transition-delay: 1.5s;
-			transition-delay: 1.5s;
+			-moz-transition-delay: 3.0s;
+			-webkit-transition-delay: 3.0s;
+			-ms-transition-delay: 3.0s;
+			transition-delay: 3.0s;
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
@@ -3845,18 +3847,17 @@ input, select, textarea {
 				width: 1.5em;
 			}
 
-		#banner:after {
+		/* #banner:after {
 			pointer-events: none;
 			-moz-transition: opacity 2s ease-in-out;
 			-webkit-transition: opacity 2s ease-in-out;
 			-ms-transition: opacity 2s ease-in-out;
 			transition: opacity 2s ease-in-out;
 			-moz-transition-delay: 0.25s;
-			-webkit-transition-delay: 0.25s;
+			-webkit-transition-delay: 0.0s;
 			-ms-transition-delay: 0.25s;
-			transition-delay: 0.25s;
+			transition-delay: 0.0s;
 			content: '';
-			/* background: var(--ocell-light-green); */
 			background: rgb(87, 87, 87);
 			display: block;
 			width: 100%;
@@ -3865,7 +3866,7 @@ input, select, textarea {
 			left: 0;
 			top: 0;
 			opacity: 0;
-		}
+		} */
 
 		@media screen and (max-width: 736px) {
 
@@ -3986,7 +3987,7 @@ input, select, textarea {
 	#main > header {
 		padding: 12em 0 10em 0 ;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/fields.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("../../images/fields.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1)), url("../../images/fields.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/fields.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/fields.jpg");
 		background-attachment: fixed;
@@ -4143,7 +4144,7 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/feld4.jpg");
 		/* background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/wald2.jpg"); */
 		/* background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/wald4.jpg"); */
-		background-image: -ms-linear-gradient(top, rgba(34, 99, 22, 0.8), rgba(34, 99, 22, 0.8)), url("../../images/ernte2.jpg");
+		/* background-image: -ms-linear-gradient(top, rgba(34, 99, 22, 0.8), rgba(34, 99, 22, 0.8)), url("../../images/ernte2.jpg"); */
 		background-image: linear-gradient(top, rgba(34, 99, 22, 0.8), rgba(34, 99, 22, 0.8)), url("../../images/feld1.jpg");
 		background-attachment: fixed;
 		background-position: center center;
@@ -4163,10 +4164,10 @@ input, select, textarea {
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(34, 99, 22, 0.8), rgba(34, 99, 22, 0.8)), url("../../images/feld1.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(34, 99, 22, 0.8), rgba(34, 99, 22, 0.8)), url("../../images/feld1.jpg");
-		background-image: -ms-linear-gradient(top, rgba(34, 99, 22, 0.8), rgba(34, 99, 22, 0.8)), url("../../images/feld1.jpg");
-		background-image: linear-gradient(top, rgba(34, 99, 22, 0.8), rgba(34, 99, 22, 0.8)), url("../../images/feld1.jpg");
+		background-image: -moz-linear-gradient(top,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/feld4.jpg");
+		background-image: -webkit-linear-gradient(top,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/feld4.jpg");
+		background-image: -ms-linear-gradient(top,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/feld4.jpg");
+		background-image: linear-gradient(top,  rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/feld4.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;

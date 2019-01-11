@@ -27,11 +27,12 @@
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>									
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
+											<li><a href="#banner" class="more scrolly">Home</a></li>
+											<!-- <li><a href="generic.html">Generic</a></li> -->
+											<li><a href="#one" class="more scrolly">Was wir tun</a></li>
+											<li><a href="#two" class="more scrolly">Ihre Vorteile</a></li>
+											<li><a href="#three" class="more scrolly">Funktionsweise</a></li>
+											<li><a href="#cta" class="more scrolly">Kontakt</a></li>
 										</ul>
 									</div>
 								</li>
@@ -49,15 +50,26 @@
 					<section id="banner">
 						<div class="inner">
 							<h2>
-								<img class="fixed-ratio-resize" alt="Ocell" src="images/logo.svg">
+								<img class="fixed-ratio-resize" alt="Ocell" src="images/logo - Kopie.svg">
 							</h2>
 						</br>							
-							<h2>
+							<!-- <h2>
 									<font color="white">
 									Ernteausfälle vermeiden </br> 
 									Betriebsmittelkosten sparen</br> 
 									ab 0.5€/Hektar 
 									</font>
+							</h2> -->
+							<h2>
+								<font color="white">
+									<div id="rotate">
+										<div>Erträge erhöhen</div> 
+										<div>Kosten reduzieren</div> 
+										<div>Schädlinge entdecken</div> 
+										<div>Ernteausfälle vermeiden</div> 
+										ab 1€/Hektar 
+									</div> 
+								</font>
 							</h2>
 							<!-- <p>
 								Wissenschaftliche Analysen ihrer Felder und Wälder ab 0.5€/Hektar 
@@ -74,11 +86,12 @@
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>OCELL bietet den leichten und kostengünstigen Einstieg in die Präzisionslandwirtschaft. 
-									Mit Hilfe von speziellen Spektralkameras zeichnen wir Bilddaten ihrer Schläge auf.<br />
-									Anschließend analysieren wir die Daten für Sie, um Ihnen zu zeigen, worin Probleme bestehen</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>OCELL bietet den leichten und kostengünstigen Einstieg in die Präzisionslandwirtschaft.</h2>
+								<p>Mit unserer speziell entwickelten Sensortechnologie zeichnen wir regelmäßig  
+									Bilddaten ihrer Schläge und Wälder aus der Luft auf. Anschließend analysieren wir die Daten für Sie,
+									um Probleme und Optimierungspotenzial aufzudecken. Sie können diese Daten bequem über die Ocell Plattform abrufen 
+									und zur Optimierung ihrer Betriebe und Forsten nutzen.
+								</p>
 							</header>
 							<ul class="icons major">
 								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
@@ -103,7 +116,7 @@
 								</li>
 								<li class="icon fa-laptop">
 									<h3>Saatgut sparen</h3>
-									<p>Ocell Analysen helfen dabei, die Qualität der Böden besser einzuschätzen. Mit Hilfe dieser Information kann im Folgejahr gezielter und gesäht werden, um die Erträge zu erhöhen.</p>
+									<p>Ocell Analysen helfen dabei, die Qualität der Böden besser einzuschätzen. Mit Hilfe dieser Information kann im Folgejahr gezielter gesäht werden, um die Erträge zu erhöhen.</p>
 								</li>
 								<li class="icon fa-code">
 									<h3>Dünger sparen</h3>
@@ -126,30 +139,39 @@
 					</section>
 				
 					<!-- Three -->
-					<section id="three" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="images/banner.jpg" alt="" /></div><div class="content">
-								<h2>ErkennuLorem Ipsum<br />
-								Lorem</h2>
-								<p></p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/modul.png" alt="" /></div><div class="content">
-								<h2>Das Ocell Sensormodul</h2>
-								<p>Mit dem eigens entwickelten Ocell Sensormodul überfliegen wir ihre Felder und zeichnen Daten in verschiedenen Spektralbereichen auf.
-									Hierbei wird mehr Licht registriert, als das menschliche Auge wahrnehmen kann. Besonders die Bereiche "Red-Edge" und "NIR" sind elementar
-									für die Früherkennung von Problemen bei Pflanzen.
-								</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
+					<section id="three" class="wrapper style3 special">
+					<!-- <section id="three" class="wrapper alt style2"> -->
+						<div class="inner">
+							<header class="major">
+								<h2>Wie funktioniert es?</h2>
+								<!-- <p>Ocell bietet Land- und Forstwirten vielerlei Vorteile<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p> -->
+							</header>
+
+							<section class="spotlight">
+								<div class="image"><img src="images/crops/fields.jpg" alt="" /></div><div class="content">
+									<h2>ErkennuLorem Ipsum<br />
+									Lorem</h2>
+									<p></p>
+								</div>
+							</section>
+							<section class="spotlight">
+								<div class="image"><img src="images/crops/wald1.jpg" alt="" /></div><div class="content">
+									<h2>Augue eleifend aliquet<br />
+									sed condimentum</h2>
+									<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								</div>
+							</section>
+							<section class="spotlight">
+								<div class="image"><img src="images/crops/modul.jpg" alt="" /></div><div class="content">
+									<h2>Das Ocell Sensormodul</h2>
+									<p>Mit dem eigens entwickelten Ocell Sensormodul überfliegen wir ihre Felder und zeichnen Daten in verschiedenen Spektralbereichen auf.
+										Hierbei wird mehr Licht registriert, als das menschliche Auge wahrnehmen kann. Besonders die Bereiche "Red-Edge" und "NIR" sind elementar
+										für die Früherkennung von Problemen bei Pflanzen.
+									</p>
+								</div>
+							</section>
+						</div>
 					</section>
 
 
@@ -158,7 +180,7 @@
 						<div class="inner">
 							<header>
 								<h2><font color="white">Interesse?</font></h2>
-								<p>Bitte sprechen Sie uns über das Kontakt-Feld an!</p>
+								<p>Bitte setzen Sie sich mit uns in Verbindung!</p>
 							</header>
 							<ul class="actions stacked">
 								<!-- <li><a href="#" class="button fit primary">Demo bald erhältlich</a></li> -->
@@ -192,12 +214,12 @@
 						</br>
 						</br>
 							<ul class="icons">
-								<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								<!-- <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
 								<li><a href="https://www.linkedin.com/company/ocell-aero/about/" target="blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="mailto:info@ocell.aero" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Ocell 2019 </li><li> All rights reserved</li><li><a href="http://html5up.net">Impressum</a></li>
+								<li>&copy; Ocell 2019 </li><li> All rights reserved</li><li><a href="impressum.html">Impressum</a></li>
 							</ul>
 						</footer>
 			</div>
@@ -209,7 +231,7 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>			
-
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/fader.js"></script>			
 	</body>
 </html>
