@@ -33,5 +33,5 @@
 })(jQuery);
 
  $(document).ready(function() {
-        $('#rotate').rotaterator({fadeSpeed:1000, pauseSpeed:3000});
+        $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:2000});
  });
