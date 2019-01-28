@@ -7,6 +7,84 @@
 <html>
 	<head>
 		<title>Ocell</title>
+		
+		<!-- Default for Google Analytics: Off -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133377957-1"></script>
+		<script>
+			window['ga-disable-UA-133377957-1'] = true;
+		</script>
+
+		<!-- Cookie consent Popup and Logic -->
+		<link rel="stylesheet" type="text/css" href="assets/css/cookieconsent.min.css" />
+		<script src="assets/js/cookieconsent.min.js"></script>
+		<script>
+		window.addEventListener("load", function(){
+		window.cookieconsent.initialise({
+			onInitialise: function(status) {
+				var type = this.options.type;
+				var didConsent = this.hasConsented();
+				if (type == 'opt-in' && didConsent) {
+					/* Activate Google Analytics */
+					window['ga-disable-UA-133377957-1'] = false;
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'UA-133377957-1');
+				}
+				if (type == 'opt-out' && !didConsent) {
+					/* Keep Google Analytics deactivated */
+					window['ga-disable-UA-133377957-1'] = true;
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'UA-133377957-1');
+				}
+				},
+			onStatusChange: function(status, chosenBefore) {
+				var type = this.options.type;
+				var didConsent = this.hasConsented();
+				if (type == 'opt-in' && didConsent) {
+					/* Activate Google Analytics */
+					window['ga-disable-UA-133377957-1'] = false;
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'UA-133377957-1');				
+				}
+				if (type == 'opt-out' && !didConsent) {
+					/* Keep Google Analytics deactivated */
+					window['ga-disable-UA-133377957-1'] = true;
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'UA-133377957-1');				
+				}
+				},
+			location: true,
+			container: document.getElementById("intro"),
+			"palette": {
+				"popup": {
+				"background": "#000000"
+				},
+				"button": {
+				"background": "#ffffff"
+				}
+			},
+			"theme": "classic",
+			// "position": "bottom-right",
+			"position": "bottom",
+				"type": "opt-out",
+			"content": {
+				"allow": 'Einverstanden',
+				// "policy": 'Privacy Policy',
+				"policy": 'Blabla',
+				"deny": "Ablehnen",
+				"href": "privacypolicy.html"
+			}
+		})});
+		</script>
+		
+		<!-- Others -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -28,7 +106,6 @@
 									<div id="menu">
 										<ul>
 											<li><a href="#banner" class="more scrolly">Home</a></li>
-											<!-- <li><a href="generic.html">Generic</a></li> -->
 											<li><a href="#one" class="more scrolly">Was wir bieten</a></li>
 											<li><a href="#two" class="more scrolly">Ihre Vorteile</a></li>
 											<li><a href="#three" class="more scrolly">Funktionsweise</a></li>
@@ -53,31 +130,17 @@
 								<img class="fixed-ratio-resize" alt="Ocell" src="images/logo - Kopie.svg">
 							</h2>
 						</br>							
-							<!-- <h2>
-									<font color="white">
-									Ernteausfälle vermeiden </br> 
-									Betriebsmittelkosten sparen</br> 
-									ab 0.5€/Hektar 
-									</font>
-							</h2> -->
 							<h2>
 								<font color="white">
 									<div id="rotate">
 										<div>Ernteerträge erhöhen</div> 
 										<div>Betriebskosten reduzieren</div> 
-										<div>Schädlinge entdecken</div> 
 										<div>Ernteausfälle vermeiden</div> 
+										<div>Schädlinge entdecken</div> 
 										ab 1€/Hektar 
 									</div> 
 								</font>
 							</h2>
-							<!-- <p>
-								Wissenschaftliche Analysen ihrer Felder und Wälder ab 0.5€/Hektar 
-							</p> -->
-							<!-- <p>
-								SPAREN SIE BIS ZU 30% IHRER BETRIEBSMITTELKOSTEN EIN </br>
-								 UND VERMEIDEN SIE ERNTEAUSFÄLLE! 
-							</p> -->
 						</div>
 						<a href="#one" class="more scrolly">Mehr Erfahren</a>
 					</section>
@@ -121,7 +184,7 @@
 									<p>OCELL hilft genau zu erkennen, wo Pflanzen durch Schädlinge oder Pilze gestresst sind. Anhand dieser Information können die Problemherde gezielt und frühzeitig bekämpft werden, bevor sie sich ausbreiten.</p>
 								</li>
 								<li class="icon fa-laptop">
-									<h3>Saatgut sparen</h3>
+									<h3>Umwelt schonen</h3>
 									<p>OCELL Analysen helfen dabei, die Qualität der Böden besser einzuschätzen. Mit Hilfe dieser Information kann im Folgejahr gezielter gesäht werden, um die Erträge zu erhöhen.</p>
 								</li>
 								<li class="icon fa-paper-plane-o">
@@ -165,7 +228,7 @@
 									<h2>Das OCELL Sensormodul</h2>
 									<p>Mit dem eigens entwickelten OCELL Sensormodul überfliegen wir ihre Felder und zeichnen Daten in verschiedenen Spektralbereichen auf.
 										Hierbei wird mehr Licht registriert, als das menschliche Auge wahrnehmen kann. Besonders die Bereiche "Red-Edge" und "NIR" sind elementar
-										für die Früherkennung von Problemen bei Pflanzen.
+										für die Früherkennung von Pflanzenstress.
 									</p>
 								</div>
 							</section>
@@ -195,33 +258,40 @@
 								<p>Bitte setzen Sie sich mit uns in Verbindung!</p>
 							</header>
 							<ul class="actions stacked">
-								<!-- <li><a href="#" class="button fit primary">Demo bald erhältlich</a></li> -->
+								<!-- <li><a href="slider.html" target="blank" class="button fit primary">Demo 1</a></li>
+								<li><a href="layer.html" target="blank" class="button fit primary">Demo 2</a></li> -->
 								<li><a href="mailto:info@ocell.aero" class="button fit">Kontakt</a></li>
 							</ul>
+							<!-- <a href="#banner" class="totop scrolly">Hoch</a> -->
+						</div>
 					</section>
 
 				<!-- Footer -->	
 					<footer id="footer">
-							<h2>Gefördert durch:</h2>
-							<div class="limited-width">
-								<div class="row"> 
-									<div class="column">
-										<a href="https://www.bmwi.de/" target="blank"><img src="images/logos/bmwi.png" style="width:50%"></a>
-										<a href="https://www.esf.de/" target="blank"><img src="images/logos/esf.svg" style="width:50%"></a>
-										<a href="https://europa.eu/european-union/index_de" target="blank"><img src="images/logos/eu.svg" style="width:50%"></a>
-									</div>
-									<div class="column">
-										<a href="https://www.esf.de/" target="blank"><img src="images/logos/zzg.svg" style="width:50%"></a>
-										<a href="https://www.exist.de/" target="blank"><img src="images/logos/exist.png" style="width:50%"></a>
-										<a href="https://www.nvidia.com/de-de/deep-learning-ai/startups/" target="blank"><img src="images/logos/nvidia.png" style="width:50%"></a>
-									</div> 
-									<div class="column">
-										<a href="https://www.tum.de/" target="blank"><img src="images/logos/tum.png" style="width:50%"></a>
-										<a href="https://www.unternehmertum.de/" target="blank"><img src="images/logos/utum.png" style="width:50%"></a>
-										<a href="https://xpreneurs.io/" target="blank"><img src="images/logos/xpreneurs.png" style="width:50%"></a>
-									</div>
+						<!-- <ul class="actions stacked">
+							<li><a href="#one" class="button more scrolly">Hoch</a></li>
+						</ul> -->
+						<h2>Gefördert durch:</h2>
+
+						<div class="limited-width">
+							<div class="row"> 
+								<div class="column">
+									<a href="https://www.bmwi.de/" target="blank"><img src="images/logos/bmwi.png" style="width:50%"></a>
+									<a href="https://www.esf.de/" target="blank"><img src="images/logos/esf.svg" style="width:50%"></a>
+									<a href="https://europa.eu/european-union/index_de" target="blank"><img src="images/logos/eu.svg" style="width:50%"></a>
+								</div>
+								<div class="column">
+									<a href="https://www.esf.de/" target="blank"><img src="images/logos/zzg.svg" style="width:50%"></a>
+									<a href="https://www.exist.de/" target="blank"><img src="images/logos/exist.png" style="width:50%"></a>
+									<a href="https://www.nvidia.com/de-de/deep-learning-ai/startups/" target="blank"><img src="images/logos/nvidia.png" style="width:50%"></a>
+								</div> 
+								<div class="column">
+									<a href="https://www.tum.de/" target="blank"><img src="images/logos/tum.png" style="width:50%"></a>
+									<a href="https://www.unternehmertum.de/" target="blank"><img src="images/logos/utum.png" style="width:50%"></a>
+									<a href="https://xpreneurs.io/" target="blank"><img src="images/logos/xpreneurs.png" style="width:50%"></a>
 								</div>
 							</div>
+						</div>
 						</br>
 						</br>
 						</br>
@@ -231,7 +301,9 @@
 								<li><a href="mailto:info@ocell.aero" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Ocell 2019 </li><li> All rights reserved</li><li><a href="impressum.html">Impressum</a></li>
+								<li>&copy; Ocell 2019 </li><li> All rights reserved</li>
+								<li><a href="impressum.html">Impressum</a></li>
+								<li><a href="privacypolicy.html">Privacy Policy</a></li>
 							</ul>
 						</footer>
 			</div>
