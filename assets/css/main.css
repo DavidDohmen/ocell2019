@@ -88,7 +88,7 @@ input, select, textarea {
   }
 
 .limited-width {
-		max-width: 1000px;
+		max-width: 1200px;
 		margin: auto
 	}
 
@@ -96,7 +96,7 @@ input, select, textarea {
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0 40px;
+	padding: 0 0px;
   }
   
   Create four equal columns that sits next to each other
@@ -3818,7 +3818,7 @@ input, select, textarea {
 			bottom: 0;
 			color: inherit;
 			font-size: 0.8em;
-			height: 8.5em;
+			height: 9.5em;
 			left: 50%;
 			letter-spacing: 0.225em;
 			margin-left: -8.5em;
@@ -3837,7 +3837,7 @@ input, select, textarea {
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
-				bottom: 4em;
+				bottom: 5.5em;
 				content: '';
 				display: block;
 				height: 1.5em;
@@ -3937,8 +3937,7 @@ input, select, textarea {
 		-webkit-transform: translateY(0);
 		-ms-transform: translateY(0);
 		transform: translateY(0);
-		border: none;
-		bottom: 0;
+		border: 0;
 		color: inherit;
 		font-size: 0.8em;
 		height: 8.5em;
@@ -3956,16 +3955,16 @@ input, select, textarea {
 	}
 
 		#cta .totop:after {
-			background-image: url("images/arrow.svg");
+			background-image: url("images/arrowD.svg");
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: contain;
-			/* bottom: 4em; */
+			bottom: 9em;
 			content: '';
 			display: block;
-			/* height: 1.5em;
+			height: 1.5em;
 			left: 50%;
-			margin: 0 0 0 -0.75em; */
+			margin: 0 0 0 -0.75em;
 			position: absolute;
 			width: 1.5em;
 		}
